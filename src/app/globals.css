@@ -2,6 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+@font-face {
+  font-family: inter;
+  src: url('/public//font//Inter-VariableFont_slnt\,wght.ttf')
+}
+
+.h1.h2.h3.h4.h5.h6.p {
+  font-family: inter;
+}
+
+.card{
+  padding: 10px;
+}
+
+
+.card1 ,h1 ,h2 ,h3, h4 {
+    font-size: larger;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+.card1 p{
+  font-size: small;
+ 
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  10% {
+    transform: translateX(-10%);
+  }
+}
+
+.animate-slide {
+  animation: slide 60s linear infinite;
+}
+
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
